@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Les bandeaux d’alerte complexes - Opentuto</title>
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- comme nous avons à utiliser l'API JavaScript de Bootstrap 3, nous devons
+    appeler le framework JQuery. -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- Chargement de l'API JavaScript de Bootstrap 3. -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <br/>
+    <div class="alert alert-dismissable alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+
+        <p>Visitez notre premier opentuto : Bootstrap 3! <a href="http://www.opentuto.com/tutoriels/maitriser-bootstrap-3-par-la-pratique/">Bootstrap 3</a></p>
+
+        <p><button id="myButton" type="button" class="btn btn-primary">Fermer</button></p>
+
+    </div> <!-- Fin du bandeau d'alerte -->
+
+    <script>
+        $('#myButton').click(function(){ /* Après le clic sur l'élément dont l'id est "myButton" (le bouton dans notre cas) "*/
+            $('.alert').alert('close'); /* Faire disparaitre le bandeau d'alerte*/
+        });
+    </script>
+</div>
+</div>
+
+</body>
+</html>

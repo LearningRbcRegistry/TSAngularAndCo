@@ -1,0 +1,13 @@
+<div class="container-fluid" style="background:black" >
+<div class="row" >
+
+    <div ui-view="addpetform"></div>
+        <div ng-repeat="cat in vm.categories" class="col-md-3">
+            <div>
+                <a ui-sref="pet({ catId : cat.id})">
+                    <img ng-src="..\src\app\{{cat.localUrl}}" class="img-circle" alt="{{cat.make}}"/>
+                </a>
+            </div>
+        </div>
+</div>
+</div>

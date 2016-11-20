@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="PetStoreTs">
+<head></head>
+<body>
+<br>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<script src="../node_modules/angular-ui-router/node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-animate/angular-animate.js"></script>
+<script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="js/app.module.js"></script>
+<script src="js/controllers/pet.controller.js"></script>
+<script src="js/controllers/add.pet.controller.js"></script>
+<script src="js/controllers/categories.controller.js"></script>
+<script src="js/services/categories.service.js"></script>
+<script src="js/services/pet.service.js"></script>
+<div ui-view="petview1"></div>
+<div>
+
+    <div ui-view="details1"></div>
+    <div ui-view="addpetform"></div>
+</div>
+
+</body>
+</html>

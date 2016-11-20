@@ -1,0 +1,37 @@
+<div class="container-fluid">
+<div class="row">
+    <br/>
+    <h3>Pets:</h3>
+
+    <div class="error">{{vm.errorMessage}}</div>
+    <table  class="table table-striped">
+
+        <thead>
+        <div ui-view="petview1"></div>
+        <tr><td><a ui-sref="addpetform({ catId:vm.categoryId})">Add a Pet</a></td></tr>
+        <tr>
+            <th class="col-md-1">Categoryid</th>
+            <th class="col-md-1">id</th>
+            <th class="col-md-2">Description</th>
+            <th class="col-md-2">Localurl</th>
+            <th class="col-md-1">Make</th>
+            <th class="col-md-1">Price</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="pet in vm.pets">
+            <td>{{vm.categoryId}}</td>
+            <td>{{pet.id}}</td>
+            <td>{{pet.description}}</td>
+            <td><img ng-src="..\src\app\{{pet.localUrl}}" class="img-circle" alt="{{pet.make}}"/></td>
+            <td>{{pet.make}}</td>
+            <td>{{pet.price}}</td>
+            <td></td>
+            <td><a href="" ng-click="vm.deletePet(pet.id,$index)">Delete this pet</a></td>
+
+        </tr>
+    </table>
+</div>
+
+
+</div>
+

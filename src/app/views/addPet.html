@@ -1,0 +1,33 @@
+Selected Pet Category: {{vm.categoryId}}
+<form name="addPet" ng-submit="addPets()">
+
+<table  class="table table-striped">
+<tr>
+    <td>Make:</td>
+    <td>
+        <input type="text" name="make" ng-model="make" required/>
+    </td>
+</tr>
+    <tr>
+        <td>Description:</td>
+        <td>
+            <input type="text" name="description" ng-model="description" required/>
+        </td>
+    </tr>
+    <tr>
+        <td>url:</td>
+        <td>
+            <input type="text" name="url" ng-model="url" required/>
+        </td>
+    </tr>
+    <tr>
+        <td>price:</td>
+        <td>
+            <input type="text" name="price" ng-model="price" required/>
+        </td>
+    </tr>
+</table>
+
+<input type="submit" id="submit" value = "Add a Pet to category">
+</form>
+
