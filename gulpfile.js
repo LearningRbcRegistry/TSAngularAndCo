@@ -90,4 +90,4 @@ gulp.task('serve', ['compile-ts', 'watch'], function() {
     });
 });
 
-gulp.task('default', ['ts-lint', 'compile-ts']);
+gulp.task('default', [ 'compile-ts']);
